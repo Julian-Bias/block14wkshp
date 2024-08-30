@@ -61,7 +61,13 @@ function getMean(numbers) {
 //  * @returns {number} the smallest of the numbers
 //  */
 function getMin(numbers) {
-  return Math.min(...numbers);
+  let minNumber = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[1] < minNumber) {
+      minNumber = numbers[i];
+    }
+  }
+  return minValue;
 }
 
 // /**
@@ -69,7 +75,13 @@ function getMin(numbers) {
 //  * @returns {number} the largest of the numbers
 //  */
 function getMax(numbers) {
-  return Math.max(...numbers);
+  let maxNumber = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[1] > maxNumber) {
+      minNumber = numbers[i];
+    }
+  }
+  return maxValue;
 }
 
 // /**
