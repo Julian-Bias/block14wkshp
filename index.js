@@ -67,7 +67,7 @@ function getMin(numbers) {
       minNumber = numbers[i];
     }
   }
-  return minValue;
+  return minNumber;
 }
 
 // /**
@@ -77,11 +77,11 @@ function getMin(numbers) {
 function getMax(numbers) {
   let maxNumber = numbers[0];
   for (let i = 1; i < numbers.length; i++) {
-    if (numbers[1] > maxNumber) {
-      minNumber = numbers[i];
+    if (numbers[i] > maxNumber) {
+      maxNumber = numbers[i];
     }
   }
-  return maxValue;
+  return maxNumber;
 }
 
 // /**
